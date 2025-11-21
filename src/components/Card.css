@@ -1,0 +1,72 @@
+.Card {
+    background-color: white;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto; /* Centers the card */
+    width: 90%;        /* Responsive width */
+    max-width: 600px;  /* Prevents it from getting too wide on big screens */
+    text-align: left;
+    position: relative; /* Needed to position the edit button */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Hover Effect: Makes the card float up slightly */
+  .Card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* The Edit Icon (top right corner) */
+  .moreButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+  
+  .moreButton:hover {
+    opacity: 1;
+  }
+  
+  /* Text Styling */
+  .title {
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #2c3e50; /* Dark Blue-Grey */
+  }
+  
+  .author {
+    font-size: 0.9rem;
+    color: #7f8c8d; /* Grey for the date */
+    font-weight: normal;
+    margin-top: 0;
+  }
+  
+  .upvotes {
+    font-weight: bold;
+    color: #27ae60; /* Green for positivity */
+    margin: 15px 0;
+  }
+  
+  /* The "See More" Button */
+  .Card button {
+    background-color: #3498db; /* Travel Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px; /* Pill shape */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .Card button:hover {
+    background-color: #2980b9;
+  }

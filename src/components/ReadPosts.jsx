@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Card from '../components/Card'; // Assumes you have a simple Card component
+import Card from './Card'; // Assumes you have a simple Card component
 import { supabase } from '../supabaseClient';
 
 const ReadPosts = () => {

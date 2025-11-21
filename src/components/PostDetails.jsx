@@ -55,6 +55,8 @@ const PostDetails = () => {
         setPost((prev) => ({...prev, comments: updatedComments}));
         setNewComment("");
     }
+    
+    if (!post.id) return <div>Loading...</div>;
 
     return (
         <div className="post-details">

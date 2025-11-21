@@ -34,6 +34,8 @@ const EditPost = () => {
         })
     }
 
+    if (!post.id) return <div>Loading...</div>;
+
     return (
         <div>
             <form onSubmit={updatePost}>
